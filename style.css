@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
-} 
+}
 
 :root {
     --gray-800: #1E293B;
@@ -42,11 +42,13 @@ main {
 .descricao p {
     font-size: 0.8125rem;
     color: var(--gray-600);
-} 
+}
 
 .inputs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
 }
 
 
@@ -77,9 +79,8 @@ main {
 .login input::hover, 
 .login input:focus {
     outline: 1px solid var(--purple);
+
 }
-
-
 
 .login a {
     color: var(--purple);
@@ -107,9 +108,6 @@ main {
     cursor: pointer;
 }
 
-
-
-
 .login > p {
     color: var(--gray-600);
 }
@@ -123,6 +121,9 @@ main {
     text-decoration: underline;
 }
 
+.bg-desktop {
+    display: none;
+}
 
 @media(min-width: 1000px) {
     header {
@@ -148,6 +149,11 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center
+    }
+
+    .bg-desktop {
+        display: block;
+        width: 100%;
     }
 
     .bg-desktop img {
